@@ -45,7 +45,7 @@ with col1:
     
     if st.button("🚀 Simulate Market Entry"):
         # Explicitly use the local host address
-        API_URL = "http://127.0.0.1:8000/predict"
+        API_URL = "https://api.dishasingh.xyz/predict"
         payload = {"age": age, "income": income, "dharma_score": dharma}
         
         try:
@@ -103,4 +103,4 @@ with col3:
         st.markdown('</div>', unsafe_allow_html=True)
         st.metric("Total Nexus Nodes", len(st.session_state.G.nodes))
     else:
-        st.info("Simulate an entry to start.")
+        st.info("Simulate an entry to start.")  
